@@ -1,0 +1,590 @@
+.nav 
+{
+    display: flex;
+    height: 100px;
+    flex-direction: row;
+    background-color: #00203fff;
+    width: 100%;
+}
+body { 
+  font-family: 'Overpass', sans-serif;
+  background: linear-gradient(90deg, #09755c, #109e9e, #2f45c1);
+  animation: gradient 8s ease infinite;
+}
+.button {
+    background-color: #00203fff;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 20%;
+    height: 60px;
+  }
+  .inline-webtitle
+  {
+    display: block;
+    margin-left: 5%;
+    margin-bottom: 15px;
+  }
+  .navbar-image
+  {
+    height: 100px;
+    width: 100px;
+    margin-left: 120px;
+    margin-right: 40px;
+  }
+  .product-layout
+  {
+    height: 10%;
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 7px;
+    display: flex;
+    background-color: #ADEFD1FF;
+    width: 100%;
+  }
+  .product-text-layout
+  {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+   .product-price
+   {
+    padding-top: 0px;
+   }
+   .product-description
+   {
+     border: 1px solid black;
+     border-radius: 5px;
+     width: 500px;
+   }
+   .description-button {
+    border-radius: 5px;
+    background-color: #00203fff;
+    border: 2px solid black;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: relative;
+  }
+  .header-product-text
+  {
+    padding-right: 300px;
+  }
+  .product-image-container
+  {
+    background-color: #010000;
+    width: 228px;
+    height: 228px;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 100px;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .product-image-container:hover
+  {
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .product-image-container:hover .product-image
+  {
+      justify-content: center;
+      align-items: center;
+      opacity: 0.3;
+  }
+  .product-image-container:hover .product-image-text
+  {
+    font-weight: 900;
+    letter-spacing: 3px;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    color: white;
+    animation: textAnimation 0.25s linear;
+    margin-top: 50%;
+  }
+  .product-image-container:hover .product-image-description
+  {
+    opacity: 1;
+    animation: anim 0.2s ease-in-out;
+    color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+  }
+ 
+  .product-image-container:hover .product-image-desc-holder
+  {
+    background-color: rgb(41, 44, 42);
+    object-fit: cover;
+    overflow: hidden;
+  }
+  .product-image-desc-holder
+  {
+    border-radius: 10px solid white;
+    opacity: 1;
+    width: 95%;
+    height: 4.8rem;
+    margin-left: 2.5%;
+    border-radius: 5px;
+  }
+  .product-image-description
+  {
+    opacity: 0;
+    font-size: 1.5vmin;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 50%;
+    padding-top: 5%;
+  }
+  .product-image-text
+  {
+    display: grid;
+    place-items: center;
+    font-size: 1rem;
+    margin-top: 50%;
+    opacity: 0;
+    color: black;
+  }
+  @keyframes textAnimation {
+     0%{
+      opacity: 0.4;
+      letter-spacing: 1px;
+      font-size: 0.2rem;
+     }
+     25%{
+      opacity: 0.8;
+      letter-spacing: 2px;
+      font-size: 0.7rem;
+     }
+     50%{
+      opacity: 1;
+      letter-spacing: 3px;
+      font-size: 1.4rem;
+     }
+     65%{
+       font-size: 1.2rem;
+     }
+     83%{
+      font-size: 1.1rem;
+     }
+     100%{
+       font-size: 1rem;
+     }
+  }
+  .product-image
+  {
+    border-radius: 10px;
+    border: 4px solid black;
+    width: 220px;
+    height: 220px;
+    transition: 0.5s ease-in-out;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+  }
+
+  .product-form
+  {
+    display: block;
+  }
+  .product-reservation-layout
+  {
+    padding-top: 5%;
+  }
+  .pruduct-submit
+  {
+    background-color: #00203fff;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 50px;
+  }
+  .glow {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+
+  @keyframes glow {
+    from {
+      
+      text-shadow: 0 0 30px #fff, 0 0 20px #4d6bff, 0 0 20px #4da3ff, 0 20 20px #4d53ff, 0 0 20px #4ddeff, 0 0 20px #594dff, 0 0 20px #ff4da6;
+    }
+    
+    to {
+      text-shadow: 0 0 30px #fff, 0 0 20px rgb(255, 255, 255), 0 0 20px #00e68e, 0 0 20px #00e6ad, 0 0 20px #a100e6, 0 0 20px #b800e6, 0 0 20px #8200e6;
+    }
+  }
+ 
+  .content {
+    position: relative;
+  }
+  
+  .content h2 {
+    color: #fff;
+    font-size: 4em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+  
+  .content h2:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 1px #ffffff;
+  }
+  
+  .content h2:nth-child(2) {
+    color: #ffffff;
+    animation: animate 4s ease-in-out infinite;
+  }
+  
+  @keyframes animate {
+    0%,
+    100% {
+      clip-path: polygon(
+        0% 45%,
+        16% 44%,
+        33% 50%,
+        54% 60%,
+        70% 61%,
+        84% 59%,
+        100% 52%,
+        100% 100%,
+        0% 100%
+      );
+    }
+  
+    50% {
+      clip-path: polygon(
+        0% 60%,
+        15% 65%,
+        34% 66%,
+        51% 62%,
+        67% 50%,
+        84% 45%,
+        100% 46%,
+        100% 100%,
+        0% 100%
+      );
+    }
+  }
+  .background-animation
+  {
+      background: linear-gradient(90deg, #09755c, #109e9e, #2f45c1);
+      background-size: 400% 400%;
+      animation: gradient 8s ease infinite;
+      height: 100vh;
+      height: 280px;
+      border: 1px solid black;
+      border-radius: 7px;
+      background-color: #ADEFD1FF;
+      width: 100%;
+  }
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  .btn-shine{
+  position: relative;
+  color: #ffffff;
+  background: linear-gradient(to left, #18049f 0, rgb(35, 2, 119) 10%, #010000 20%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 5s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  white-space: nowrap;
+  
+}
+    
+@keyframes shine{
+  0%{
+    background-position: 0
+    }
+  50%{
+    background-position: 135px
+  }
+  100%{
+    background-position: 270px}
+  }
+  .btnn {
+    width: 20%;
+    height: 60px;
+    cursor: pointer;
+    border: 1px solid #dddfec;
+    outline: none;
+    transition: 0.3s ease-in-out;
+    display: inline;
+  }
+  
+  svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: #fff;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+  }
+  .btnn:focus
+  {
+    background-color: #ffffff;
+  }
+  
+  .btnn:hover {
+    transition: 0.3s ease-in-out;
+    background: #fff9f9;
+    color: #ffffff;
+    font-size: 16px;
+    height: 60px;
+    transform: scale(1.035);
+  }
+  
+  .btnn:hover svg {
+    stroke-dashoffset: -480;
+  }
+  
+  .btnn span {
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+    font-weight: 100;
+  }
+  .background-animation2{
+    margin:0;
+    padding:0;
+    font-family:"arial",sans-serif;
+    font-size:12px;
+    background: #980b1e url('https://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png') repeat 0 0;
+    -webkit-animation: 10s linear 0s normal none infinite animatee;
+    -moz-animation: 10s linear 0s normal none infinite animatee;
+    -ms-animation: 10s linear 0s normal none infinite animatee;
+    -o-animation: 10s linear 0s normal none infinite animatee;
+    animation: 10s linear 0s normal none infinite animatee;
+    display: flex;
+    border: 2px solid black;
+    border-radius: 5px;   
+  }
+   
+  @-webkit-keyframes animatee {
+    from {background-position:0 0;}
+    to {background-position: 500px 0;}
+  }
+   
+  @-moz-keyframes animatee {
+    from {background-position:0 0;}
+    to {background-position: 500px 0;}
+  }
+   
+  @-ms-keyframes animatee {
+    from {background-position:0 0;}
+    to {background-position: 500px 0;}
+  }
+   
+  @-o-keyframes animatee {
+    from {background-position:0 0;}
+    to {background-position: 500px 0;}
+  }
+   
+  @keyframes animatee {
+    from {background-position:0 0;}
+    to {background-position: 500px 0;}
+  }
+  .main{
+    position: relative;
+    margin-top: 40px;
+  }
+  .hello{
+    position: absolute;
+    left: 3%;
+    top: 7px;
+    font-size: 18px;
+    font-weight: 200;
+    color: #cecece;
+    transition: all 0.5s ease;
+    pointer-events: none;
+  }
+  
+  input[type=text]:focus~.hello {
+    display:block;
+    color: rgb(255, 255, 255);
+    top: -20px;
+    font-size: 14px;
+  }
+  
+    input[type=text]:focus~.enter {
+      background-color: #0F1F7A;
+      position: absolute;
+      content: ' ';
+      height: 4px;
+      right: 64.45%;
+      top: 33px;
+      transform: scaleX(6.08);
+      }
+  .enter{
+    transition: all ease 0.5s;
+    width: 10.1%;
+    transform: scaleX(1);
+  }
+  
+  textarea, input { 
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid #cecece;
+    height: 30px;
+    width: 160px;
+  }
+  .test
+  {
+    content: ' ';
+    height: 4px;
+    right: 62.45%;
+    top: 33px;
+    transform: scaleX(6.41)
+  }
+  .card-image
+  {
+    height: 200px;
+    width: 200px;
+    transition: 0.7s ease-in-out;
+    display: inline;
+  }
+  .card-container
+  {
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    position: relative;
+    transition: 0.3s ease-in-out;
+  }
+  .card-content
+  {
+    font-size: 0rem;
+    opacity: 0;
+    margin-left: 1rem;
+    color:#010000;
+    transition-delay: 1.5s;
+    transition: 0.5s ease-in-out;
+  }
+  .card-container:hover 
+  {
+     width: 400px;
+     border-radius: 2px solid black;
+     position: relative;
+     background-color: gray;
+  }
+  .card-container:hover .card-content
+  {
+    display: inline;
+    position: absolute;
+    opacity: 1;
+    font-size: 1rem;
+  }
+  @keyframes anim {
+    0%
+    {
+      opacity: 0;
+    }
+    33%
+    {
+      opacity: 0.1;
+    }
+    66%
+    {
+      opacity: 0.2;
+    }
+    100%
+    {
+      opacity: 1;
+    }
+  }
+  .log-in-container
+  {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 5px;
+    margin-left: 40%;
+    margin-top: 13%;
+    border: 2px solid black;
+    background: #980b1e url('https://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png') repeat 0 0;
+    -webkit-animation: 10s linear 0s normal none infinite animatee;
+    -moz-animation: 10s linear 0s normal none infinite animatee;
+    -ms-animation: 10s linear 0s normal none infinite animatee;
+    -o-animation: 10s linear 0s normal none infinite animatee;
+    animation: 10s linear 0s normal none infinite animatee;
+  }
+  .log-in-container::before
+  {
+    content: "Log in/Register";
+    margin-left: 32%;
+    transition: 0.5s ease-in-out;
+  }
+  .forms
+  {
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    display:block;
+  }
+  .buttons
+  {
+     margin-left: 9%;
+     margin-top: 2%;
+  }
+  .reservations-div-container
+  {
+    height: auto;
+    width: 100%;
+    border: 2px solid black;
+  }
+  .add-product
+  {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 5px;
+    margin-left: 40%;
+    margin-top: 13%;
+    border: 2px solid black;
+    background: #980b1e url('https://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png') repeat 0 0;
+    -webkit-animation: 10s linear 0s normal none infinite animatee;
+    -moz-animation: 10s linear 0s normal none infinite animatee;
+    -ms-animation: 10s linear 0s normal none infinite animatee;
+    -o-animation: 10s linear 0s normal none infinite animatee;
+    animation: 10s linear 0s normal none infinite animatee;
+  }
+  .add-product::before
+    {
+      content: "Te dhenat per produktin";
+      margin-left: 23%;
+      transition: 0.5s ease-in-out;
+    }
+.other-reservations
+{
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-top: 2%
+}
+
+    
